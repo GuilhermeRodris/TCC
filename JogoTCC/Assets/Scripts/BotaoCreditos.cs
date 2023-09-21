@@ -8,7 +8,7 @@ public class BotaoCreditos : MonoBehaviour
     
     public void IrParaOsCreditos()
     {
-        SceneManager.LoadScene(4);
+        SceneManager.LoadScene(6);
 
     }
 }
