@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 124637859}
   - component: {fileID: 124637858}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoJogar
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -189,8 +189,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -269,6 +269,7 @@ GameObject:
   - component: {fileID: 236285520}
   - component: {fileID: 236285519}
   - component: {fileID: 236285518}
+  - component: {fileID: 236285521}
   m_Layer: 5
   m_Name: "Bot\xE3oOpcoes"
   m_TagString: Untagged
@@ -339,7 +340,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 236285519}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 236285521}
+        m_TargetAssemblyTypeName: "Op\xE7\xF5es, Assembly-CSharp"
+        m_MethodName: IrParaAsOpcoes
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &236285519
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -353,7 +366,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5686275, g: 0.56078434, b: 0.84705883, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -378,6 +391,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 236285516}
   m_CullTransparentMesh: 1
+--- !u!114 &236285521
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 236285516}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cae0e05d9ed6c4b4d9b5a41fc176de6f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &425957237
 GameObject:
   m_ObjectHideFlags: 0
@@ -566,7 +591,7 @@ GameObject:
   - component: {fileID: 529714293}
   - component: {fileID: 529714292}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoSair
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -620,8 +645,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -700,7 +725,7 @@ GameObject:
   - component: {fileID: 811853028}
   - component: {fileID: 811853027}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoCreditos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -754,8 +779,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
@@ -834,8 +859,9 @@ GameObject:
   - component: {fileID: 1062873435}
   - component: {fileID: 1062873434}
   - component: {fileID: 1062873433}
+  - component: {fileID: 1062873436}
   m_Layer: 5
-  m_Name: "Bot\xE3oCreeditos"
+  m_Name: "Bot\xE3oCreditos"
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -904,7 +930,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1062873434}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1062873436}
+        m_TargetAssemblyTypeName: BotaoCreditos, Assembly-CSharp
+        m_MethodName: IrParaOsCreditos
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1062873434
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -918,7 +956,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5686275, g: 0.56078434, b: 0.84705883, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -943,6 +981,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1062873431}
   m_CullTransparentMesh: 1
+--- !u!114 &1062873436
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1062873431}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 16c0bfc0dac777544bab92923deb50b2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1244873653
 GameObject:
   m_ObjectHideFlags: 0
@@ -955,6 +1005,7 @@ GameObject:
   - component: {fileID: 1244873657}
   - component: {fileID: 1244873656}
   - component: {fileID: 1244873655}
+  - component: {fileID: 1244873658}
   m_Layer: 5
   m_Name: "Bot\xE3oJogar"
   m_TagString: Untagged
@@ -1025,7 +1076,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1244873656}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1244873658}
+        m_TargetAssemblyTypeName: BotaoJogar, Assembly-CSharp
+        m_MethodName: IrParaAFase1
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1244873656
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1039,7 +1102,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5686275, g: 0.56078434, b: 0.84705883, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1064,6 +1127,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1244873653}
   m_CullTransparentMesh: 1
+--- !u!114 &1244873658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1244873653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 113eea0ed8a77c14797b001f63baa248, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1333809786
 GameObject:
   m_ObjectHideFlags: 0
@@ -1076,6 +1151,7 @@ GameObject:
   - component: {fileID: 1333809790}
   - component: {fileID: 1333809789}
   - component: {fileID: 1333809788}
+  - component: {fileID: 1333809791}
   m_Layer: 5
   m_Name: "Bot\xE3oSair"
   m_TagString: Untagged
@@ -1146,7 +1222,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1333809789}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1333809791}
+        m_TargetAssemblyTypeName: BotaoSair, Assembly-CSharp
+        m_MethodName: Sair
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1333809789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1160,7 +1248,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.5686275, g: 0.56078434, b: 0.84705883, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -1185,6 +1273,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1333809786}
   m_CullTransparentMesh: 1
+--- !u!114 &1333809791
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1333809786}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8e59064f98ac35040ac6440fff78594a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1603499782
 GameObject:
   m_ObjectHideFlags: 0
@@ -1265,7 +1365,7 @@ GameObject:
   - component: {fileID: 1617687434}
   - component: {fileID: 1617687433}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: TextoOpcoes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1319,8 +1419,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4294967295
+  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:
