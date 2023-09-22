@@ -5,12 +5,6 @@ using UnityEngine.SceneManagement;
 
 public class Fases : MonoBehaviour
 {
-    public void IrParaOSeletor()
-    {
-        SceneManager.LoadScene(2);
-
-    }
-
 
 public void IrParaFase1()
     {
