@@ -12,11 +12,21 @@ public class GameManager : MonoBehaviour
 
     public GameObject PainelPause;
 
+    public GameObject[] characterPrefabs; // Lista de prefabs dos personagens
+
+    public Transform characterSpawnPoint; // Ponto de spawn do personagem
+
+    public Text characterNameText; // Texto para mostrar o nome do personagem selecionado
+
+    private int selectedCharacterIndex = 0; // Índice do personagem selecionado
+
+
 
     // Start is called before the first frame update
     void Start()
     {
         pontuacao = 0;
+        SpawnCharacter();
     }
 
     // Update is called once per frame
@@ -47,4 +57,46 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    private void Awake()
+    {
+        if (_instance != null && _instance != this)
+        {
+            Destroy(this.gameObject);
+        }
+        else
+        {
+            _instance = this;
+            DontDestroyOnLoad(this.gameObject);
+        }
+    }
+
+    public void NextCharacter()
+    {
+        selectedCharacterIndex = (selectedCharacterIndex + 1) % characterPrefabs.Length;
+        SpawnCharacter();
+    }
+
+    public void PreviousCharacter()
+    {
+        selectedCharacterIndex = (selectedCharacterIndex - 1 + characterPrefabs.Length) % characterPrefabs.Length;
+        SpawnCharacter();
+    }
+
+    private void SpawnCharacter()
+    {
+        // Destrua o personagem atual (se houver)
+        foreach (Transform child in characterSpawnPoint)
+        {
+            Destroy(child.gameObject);
+        }
+
+        // Instancie o novo personagem
+        GameObject selectedCharacter = Instantiate(characterPrefabs[selectedCharacterIndex], characterSpawnPoint.position, Quaternion.identity);
+        selectedCharacter.transform.SetParent(characterSpawnPoint);
+
+        // Atualize o texto com o nome do personagem selecionado
+        characterNameText.text = selectedCharacter.name;
+    }
+    
 }
