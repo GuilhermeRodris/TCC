@@ -72,6 +72,25 @@ public class GameManager : MonoBehaviour
 
     }
 
+    public void voltarTela1()
+    {
+        if (PainelDeExplicacao2 == true ){
+            PainelDeExplicacao2.SetActive(false);
+            mostrarExplicacao2 = false;
+            PainelDeExplicacao1.SetActive(true);
+            mostrarExplicacao1 = true;
+        }
+
+    }
+
+    public void abrirTela1()
+    {
+        if (jogoPausado == true ){
+            PainelDeExplicacao1.SetActive(true);
+            mostrarExplicacao1 = true;
+        }
+    }
+
     public void passarTela2()
     {
 
@@ -80,6 +99,18 @@ public class GameManager : MonoBehaviour
             mostrarExplicacao2 = false;
             PainelDeExplicacao3.SetActive(true);
             mostrarExplicacao3 = true;
+        }
+
+    }
+
+    public void voltarTela2()
+    {
+
+        if (PainelDeExplicacao3 == true ){
+            PainelDeExplicacao3.SetActive(false);
+            mostrarExplicacao3 = false;
+            PainelDeExplicacao2.SetActive(true);
+            mostrarExplicacao2 = true;
         }
 
     }
