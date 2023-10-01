@@ -12,6 +12,17 @@ public class GameManager : MonoBehaviour
 
     public GameObject PainelPause;
 
+    public bool mostrarExplicacao1;
+
+    public GameObject PainelDeExplicacao1;
+
+    public bool mostrarExplicacao2;
+
+    public GameObject PainelDeExplicacao2;
+
+    public bool mostrarExplicacao3;
+
+    public GameObject PainelDeExplicacao3;
 
 
     // Start is called before the first frame update
@@ -29,7 +40,8 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void aumentarPontuacao(){
+    public void aumentarPontuacao()
+    {
         
     }
 
@@ -48,4 +60,38 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void passarTela1()
+    {
+        if (PainelDeExplicacao1 == true ){
+            PainelDeExplicacao1.SetActive(false);
+            mostrarExplicacao1 = false;
+            PainelDeExplicacao2.SetActive(true);
+            mostrarExplicacao2 = true;
+        }
+
+    }
+
+    public void passarTela2()
+    {
+
+        if (PainelDeExplicacao2 == true ){
+            PainelDeExplicacao2.SetActive(false);
+            mostrarExplicacao2 = false;
+            PainelDeExplicacao3.SetActive(true);
+            mostrarExplicacao3 = true;
+        }
+
+    }
+
+    public void passarTela3()
+    {
+
+        if (PainelDeExplicacao3 == true ){
+            PainelDeExplicacao3.SetActive(false);
+            mostrarExplicacao3 = false;
+        }
+
+    }
+
 }
