@@ -2508,6 +2508,26 @@ MonoBehaviour:
   PainelDeExplicacao2: {fileID: 373779885}
   mostrarExplicacao3: 0
   PainelDeExplicacao3: {fileID: 2084209547}
+  mostrarItens1: 0
+  Itens1: {fileID: 0}
+  mostrarItens2: 0
+  Itens2: {fileID: 0}
+  mostrarCalca: 0
+  ImagemCalca: {fileID: 0}
+  mostrarBlusa: 0
+  ImagemBlusa: {fileID: 0}
+  mostrarCamiseta: 0
+  ImagemCamiseta: {fileID: 0}
+  mostrarCamisetaLonga: 0
+  ImagemCamisetaLonga: {fileID: 0}
+  mostrarBermuda: 0
+  ImagemBermuda: {fileID: 0}
+  mostrarGorro: 0
+  ImagemGorro: {fileID: 0}
+  mostrarOculos: 0
+  ImagemOculos: {fileID: 0}
+  mostrarTenis: 0
+  ImagemTenis: {fileID: 0}
 --- !u!4 &1229915662
 Transform:
   m_ObjectHideFlags: 0
@@ -4149,7 +4169,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2057416951
 RectTransform:
   m_ObjectHideFlags: 0

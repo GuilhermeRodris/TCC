@@ -192,10 +192,117 @@ public class GameManager : MonoBehaviour
 
     public void poeCalca()
     {
+        if (Itens1 == true ){
+            ImagemBermuda.SetActive(false);
+            mostrarBermuda = false;
+        }
 
         if (Itens1 == true ){
             ImagemCalca.SetActive(true);
             mostrarCalca = true;
-            }
+        }
+    }
+
+    public void poeBermuda()
+    {
+        if (Itens1 == true ){
+            ImagemBermuda.SetActive(true);
+            mostrarBermuda = true;
+        }
+
+        if (Itens1 == true ){
+            ImagemCalca.SetActive(false);
+            mostrarCalca = false;
+        }
+    }
+
+    public void poeCamisetaLonga()
+    {
+        if (Itens1 == true ){
+            ImagemCamisetaLonga.SetActive(true);
+            mostrarCamisetaLonga = true;
+        }
+
+        if (Itens1 == true ){
+            ImagemCamiseta.SetActive(false);
+            mostrarCamiseta = false;
+            ImagemBlusa.SetActive(false);
+            mostrarBlusa = false;
+        }
+    }
+
+    public void poeCamiseta()
+    {
+        if (Itens1 == true ){
+            ImagemCamiseta.SetActive(true);
+            mostrarCamiseta = true;
+        }
+
+        if (Itens1 == true ){
+            ImagemCamisetaLonga.SetActive(false);
+            mostrarCamisetaLonga = false;
+            ImagemBlusa.SetActive(false);
+            mostrarBlusa = false;
+        }
+    }
+
+    public void poeBlusa()
+    {
+        if (Itens1 == true ){
+            ImagemBlusa.SetActive(true);
+            mostrarBlusa = true;
+        }
+
+        if (Itens1 == true ){
+            ImagemCamisetaLonga.SetActive(false);
+            mostrarCamisetaLonga = false;
+            ImagemCamiseta.SetActive(false);
+            mostrarCamiseta = false;
+        }
+    }
+
+    public void poeGorro()
+    {
+        if (Itens1 == true && mostrarGorro == true  ){
+            ImagemGorro.SetActive(false);
+            mostrarGorro = false;
+            return;
+        }
+
+
+        if (Itens1 == true ){
+            ImagemGorro.SetActive(true);
+            mostrarGorro = true;
+            
+        }
+
+    }
+
+    public void poeOculos()
+    {
+        if (Itens1 == true && mostrarOculos == true ){
+            ImagemOculos.SetActive(false);
+            mostrarOculos = false;
+            return;
+        }
+
+        if (Itens1 == true ){
+            ImagemOculos.SetActive(true);
+            mostrarOculos = true;
+        }
+
+        
+
+    }
+
+    public void poeTenis()
+    {
+        if (Itens1 == true ){
+            ImagemTenis.SetActive(true);
+            mostrarTenis = true;
+        }
+
+    }
+
 
 }

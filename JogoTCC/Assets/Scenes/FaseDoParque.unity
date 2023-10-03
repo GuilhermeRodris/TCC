@@ -671,6 +671,7 @@ GameObject:
   - component: {fileID: 39174909}
   - component: {fileID: 39174908}
   - component: {fileID: 39174907}
+  - component: {fileID: 39174910}
   m_Layer: 5
   m_Name: BotaoTenis
   m_TagString: Untagged
@@ -779,6 +780,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 39174905}
   m_CullTransparentMesh: 1
+--- !u!114 &39174910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39174905}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a205ad287541b7b42a65871bb0905fe0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &81195545
 GameObject:
   m_ObjectHideFlags: 0
@@ -1215,7 +1229,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 81195546}
-  m_Father: {fileID: 681173731}
+  m_Father: {fileID: 616155940}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1348,7 +1362,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 588387062}
-  - {fileID: 1018104306}
   - {fileID: 606427323}
   m_Father: {fileID: 2129517861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1407,6 +1420,7 @@ GameObject:
   - component: {fileID: 319095264}
   - component: {fileID: 319095263}
   - component: {fileID: 319095262}
+  - component: {fileID: 319095265}
   m_Layer: 5
   m_Name: BotaoCamiseta
   m_TagString: Untagged
@@ -1515,6 +1529,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 319095260}
   m_CullTransparentMesh: 1
+--- !u!114 &319095265
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 319095260}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 31bed4f93b601a744b79c3d947974653, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &342126342
 GameObject:
   m_ObjectHideFlags: 0
@@ -2161,6 +2188,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 840066972}
+  - {fileID: 1018104306}
   - {fileID: 680204754}
   m_Father: {fileID: 302063767}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2365,6 +2393,7 @@ GameObject:
   - component: {fileID: 615399657}
   - component: {fileID: 615399656}
   - component: {fileID: 615399655}
+  - component: {fileID: 615399658}
   m_Layer: 5
   m_Name: BotaoCamisetaLonga
   m_TagString: Untagged
@@ -2473,6 +2502,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 615399653}
   m_CullTransparentMesh: 1
+--- !u!114 &615399658
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 615399653}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 88ea3bbd62802b5449bcad984d64293f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &616155939
 GameObject:
   m_ObjectHideFlags: 0
@@ -2505,6 +2547,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 433446505}
+  - {fileID: 261048528}
   - {fileID: 546261535}
   - {fileID: 1363903260}
   - {fileID: 776531281}
@@ -2782,7 +2825,6 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 616155940}
-  - {fileID: 261048528}
   m_Father: {fileID: 2129517861}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -3568,6 +3610,7 @@ GameObject:
   - component: {fileID: 880841592}
   - component: {fileID: 880841591}
   - component: {fileID: 880841590}
+  - component: {fileID: 880841593}
   m_Layer: 5
   m_Name: BotaoBlusa
   m_TagString: Untagged
@@ -3676,6 +3719,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 880841588}
   m_CullTransparentMesh: 1
+--- !u!114 &880841593
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 880841588}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 810f4dc3ba349c442abca74e5dfa85a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &881920280
 GameObject:
   m_ObjectHideFlags: 0
@@ -4052,21 +4108,21 @@ MonoBehaviour:
   mostrarItens2: 0
   Itens2: {fileID: 1775650201}
   mostrarCalca: 0
-  BotaoCalca: {fileID: 0}
+  ImagemCalca: {fileID: 820601810}
   mostrarBlusa: 0
-  BotaoBlusa: {fileID: 0}
+  ImagemBlusa: {fileID: 649580143}
   mostrarCamiseta: 0
-  BotaoCamiseta: {fileID: 0}
-  mostrarCamisetaLonga: 1
-  BotaoCamisetaLonga: {fileID: 0}
+  ImagemCamiseta: {fileID: 881920280}
+  mostrarCamisetaLonga: 0
+  ImagemCamisetaLonga: {fileID: 1123685900}
   mostrarBermuda: 0
-  BotaoBermuda: {fileID: 0}
+  ImagemBermuda: {fileID: 1335692203}
   mostrarGorro: 0
-  BotaoGorro: {fileID: 0}
+  ImagemGorro: {fileID: 2038193777}
   mostrarOculos: 0
-  BotaoOculos: {fileID: 0}
+  ImagemOculos: {fileID: 1159288323}
   mostrarTenis: 0
-  BotaoTenis: {fileID: 0}
+  ImagemTenis: {fileID: 1472290945}
 --- !u!4 &990362295
 Transform:
   m_ObjectHideFlags: 0
@@ -4094,6 +4150,7 @@ GameObject:
   - component: {fileID: 1010143617}
   - component: {fileID: 1010143616}
   - component: {fileID: 1010143615}
+  - component: {fileID: 1010143618}
   m_Layer: 5
   m_Name: BotaoCalca
   m_TagString: Untagged
@@ -4202,6 +4259,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1010143613}
   m_CullTransparentMesh: 1
+--- !u!114 &1010143618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010143613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3fe347a6c1cf3a6408b3b6057395edbf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &1018104305
 GameObject:
   m_ObjectHideFlags: 0
@@ -4235,7 +4305,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1682663291}
-  m_Father: {fileID: 302063767}
+  m_Father: {fileID: 588387062}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -4349,6 +4419,7 @@ GameObject:
   - component: {fileID: 1045913387}
   - component: {fileID: 1045913386}
   - component: {fileID: 1045913385}
+  - component: {fileID: 1045913388}
   m_Layer: 5
   m_Name: BotaoGorro
   m_TagString: Untagged
@@ -4457,6 +4528,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1045913383}
   m_CullTransparentMesh: 1
+--- !u!114 &1045913388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1045913383}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c61ac75fd8cd0e24291c386345dade0c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &1102713920
 GameObject:
   m_ObjectHideFlags: 0
@@ -4567,7 +4651,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1117977282
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4789,6 +4873,7 @@ GameObject:
   - component: {fileID: 1210347472}
   - component: {fileID: 1210347471}
   - component: {fileID: 1210347470}
+  - component: {fileID: 1210347473}
   m_Layer: 5
   m_Name: BotaoBermuda
   m_TagString: Untagged
@@ -4897,6 +4982,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1210347468}
   m_CullTransparentMesh: 1
+--- !u!114 &1210347473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1210347468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9d719ba0a4e2e8c409cc47bfdf57e628, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &1212781654
 GameObject:
   m_ObjectHideFlags: 0
@@ -5514,6 +5612,7 @@ GameObject:
   - component: {fileID: 1395919472}
   - component: {fileID: 1395919471}
   - component: {fileID: 1395919470}
+  - component: {fileID: 1395919473}
   m_Layer: 5
   m_Name: BotaoOculos
   m_TagString: Untagged
@@ -5622,6 +5721,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1395919468}
   m_CullTransparentMesh: 1
+--- !u!114 &1395919473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1395919468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 946f04c250266c5438ab7eb64a5fb21f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameManager: {fileID: 990362294}
 --- !u!1 &1448619146
 GameObject:
   m_ObjectHideFlags: 0
