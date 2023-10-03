@@ -24,6 +24,47 @@ public class GameManager : MonoBehaviour
 
     public GameObject PainelDeExplicacao3;
 
+    public bool mostrarItens1;
+
+    public GameObject Itens1;
+
+    public bool mostrarItens2;
+
+    public GameObject Itens2;
+
+    public bool mostrarCalca;
+
+    public GameObject ImagemCalca;
+
+    public bool mostrarBlusa;
+
+    public GameObject ImagemBlusa;
+
+    public bool mostrarCamiseta;
+
+    public GameObject ImagemCamiseta;
+
+    public bool mostrarCamisetaLonga;
+
+    public GameObject ImagemCamisetaLonga;
+
+    public bool mostrarBermuda;
+
+    public GameObject ImagemBermuda;
+
+    public bool mostrarGorro;
+
+    public GameObject ImagemGorro;
+
+    public bool mostrarOculos;
+
+    public GameObject ImagemOculos;
+
+    public bool mostrarTenis;
+
+    public GameObject ImagemTenis;
+
+
 
     // Start is called before the first frame update
     void Start()
@@ -124,5 +165,37 @@ public class GameManager : MonoBehaviour
         }
 
     }
+
+    public void passarItens1()
+    {
+
+        if (Itens1 == true ){
+            Itens1.SetActive(false);
+            mostrarItens1 = false;
+            Itens2.SetActive(true);
+            mostrarItens2 = true;
+        }
+
+    }
+
+    public void voltarItens1()
+    {
+
+        if (Itens2 == true ){
+            Itens2.SetActive(false);
+            mostrarItens2 = false;
+            Itens1.SetActive(true);
+            mostrarItens1 = true;
+        }
+
+    }
+
+    public void poeCalca()
+    {
+
+        if (Itens1 == true ){
+            ImagemCalca.SetActive(true);
+            mostrarCalca = true;
+            }
 
 }
