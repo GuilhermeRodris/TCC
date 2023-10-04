@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolheCalca : MonoBehaviour
+public class AvancarItens2 : MonoBehaviour
 {
    public GameManager gameManager;
 
@@ -15,6 +15,6 @@ public class EscolheCalca : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeCalca();
+        gameManager.passarItens2();
     }
 }

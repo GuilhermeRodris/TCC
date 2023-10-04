@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolherCamista : MonoBehaviour
+public class EscolherCalca1 : MonoBehaviour
 {
     public GameManager gameManager;
 
@@ -15,6 +15,6 @@ public class EscolherCamista : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeCamiseta();
+        gameManager.poeCalca1();
     }
 }

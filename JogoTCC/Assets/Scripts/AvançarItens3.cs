@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolherBermuda : MonoBehaviour
+public class AvancarItens3 : MonoBehaviour
 {
-    public GameManager gameManager;
+   public GameManager gameManager;
 
     private void Start()
     {
@@ -15,6 +15,6 @@ public class EscolherBermuda : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeBermuda();
+        gameManager.passarItens3();
     }
 }

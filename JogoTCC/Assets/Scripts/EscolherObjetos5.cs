@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolherCamisetaLonga : MonoBehaviour
+public class EscolherObjeto5 : MonoBehaviour
 {
     public GameManager gameManager;
 
@@ -15,6 +15,6 @@ public class EscolherCamisetaLonga : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeCamisetaLonga();
+        gameManager.poeObjeto5();
     }
 }

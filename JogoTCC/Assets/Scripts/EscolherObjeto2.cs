@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolherGorro : MonoBehaviour
+public class EscolherObjeto2 : MonoBehaviour
 {
     public GameManager gameManager;
 
@@ -15,6 +15,6 @@ public class EscolherGorro : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeGorro();
+        gameManager.poeObjeto2();
     }
 }

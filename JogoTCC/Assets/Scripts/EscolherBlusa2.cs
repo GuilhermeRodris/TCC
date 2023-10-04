@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolherBlusa : MonoBehaviour
+public class EscolherBlusa2 : MonoBehaviour
 {
     public GameManager gameManager;
 
@@ -15,6 +15,6 @@ public class EscolherBlusa : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeBlusa();
+        gameManager.poeBlusa2();
     }
 }
