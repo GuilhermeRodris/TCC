@@ -3,11 +3,26 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using TMPro;
 
 public class GameManager : MonoBehaviour
 {
     //precisa para sistema de pontuação
     public int pontuacao;
+
+    public TextMeshProUGUI TextoPontuacao;
+
+    public static GameManager instance;
+
+    public List<Image> imagensParaVerificar;
+
+    public bool mostrarTelaDeConclusao;
+
+    public GameObject PainelTelaDeConclusao;
+
+    public bool mostrarTelaDePontos;
+
+    public GameObject PainelTelaDePontos;
 
     //Precisa pra pausar o jogo
     public bool jogoPausado;
@@ -111,9 +126,13 @@ public class GameManager : MonoBehaviour
 
     public GameObject ImagemOculos;
 
-    public bool mostrarCachecol;
+    public bool mostrarCachecol1;
 
-    public GameObject ImagemCachecol;
+    public GameObject ImagemCachecol1;
+
+    public bool mostrarCachecol2;
+
+    public GameObject ImagemCachecol2;
 
     //Os objetos das pras crianças
 
@@ -141,10 +160,28 @@ public class GameManager : MonoBehaviour
 
     public GameObject Objeto6;
 
+    public bool mostrarObjeto7;
+
+    public GameObject Objeto7;
+
+    void Awake()
+    {
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
+    }
+
     // Start is called before the first frame update
     void Start()
     {
         pontuacao = 0;
+        
+        
     }
 
     // Update is called once per frame
@@ -156,9 +193,54 @@ public class GameManager : MonoBehaviour
         }
     }
 
-    public void aumentarPontuacao()
+    //Metos para fazer a pontuação
+
+    public void VerificarImagensVisiveis()
     {
-        
+        int pontosGanhos = 0;
+
+        foreach (Image imagem in imagensParaVerificar)
+        {
+            if (imagem.gameObject.activeInHierarchy)
+            {
+                pontosGanhos += 10;
+            }
+        }
+
+        aumentarPontuacao(pontosGanhos);
+    }
+
+    public void aumentarPontuacao(int pontos)
+    {
+        pontuacao += pontos;
+        TextoPontuacao.text = pontuacao.ToString();
+    }
+
+    public void finalizarJogo()
+    {
+        if (mostrarTelaDeConclusao == true ){
+            PainelTelaDeConclusao.SetActive(false);
+            Time.timeScale = 1f;
+            mostrarTelaDeConclusao = false;
+        }
+
+        else {
+            PainelTelaDeConclusao.SetActive(true);
+            Time.timeScale = 0f;
+            mostrarTelaDeConclusao = true;
+        }
+
+    }
+
+    public void IrTelaDePontos()
+    {
+        if (mostrarTelaDeConclusao == true ){
+            PainelTelaDeConclusao.SetActive(false);
+            mostrarTelaDeConclusao = false;
+            PainelTelaDePontos.SetActive(true);
+            mostrarTelaDePontos = true;
+        }
+
     }
 
 //Controle de pause do jogo
@@ -612,17 +694,42 @@ public class GameManager : MonoBehaviour
 
     }
 
-    public void poeCachecol()
+    public void poeCachecol1()
     {
-        if (Itens3 == true && mostrarCachecol == true ){
-            ImagemCachecol.SetActive(false);
-            mostrarCachecol = false;
+        if (Itens3 == true && mostrarCachecol1 == true ){
+            ImagemCachecol1.SetActive(false);
+            mostrarCachecol1 = false;
             return;
         }
 
         if (Itens3 == true ){
-            ImagemCachecol.SetActive(true);
-            mostrarCachecol = true;
+            ImagemCachecol1.SetActive(true);
+            mostrarCachecol1 = true;
+        }
+
+        if (Itens3 == true ){
+            ImagemCachecol2.SetActive(false);
+            mostrarCachecol2 = false;
+        }
+
+    }
+
+    public void poeCachecol2()
+    {
+        if (Itens3 == true && mostrarCachecol2 == true ){
+            ImagemCachecol2.SetActive(false);
+            mostrarCachecol2 = false;
+            return;
+        }
+
+        if (Itens3 == true ){
+            ImagemCachecol2.SetActive(true);
+            mostrarCachecol2 = true;
+        }
+
+        if (Itens3 == true ){
+            ImagemCachecol1.SetActive(false);
+            mostrarCachecol1 = false;
         }
 
     }
@@ -715,6 +822,21 @@ public class GameManager : MonoBehaviour
         if (Itens4 == true ){
             Objeto6.SetActive(true);
             mostrarObjeto6 = true;
+        }
+
+    }
+
+    public void poeObjeto7()
+    {
+        if (Itens4 == true && mostrarObjeto7 == true ){
+            Objeto7.SetActive(false);
+            mostrarObjeto7 = false;
+            return;
+        }
+
+        if (Itens4 == true ){
+            Objeto7.SetActive(true);
+            mostrarObjeto7 = true;
         }
 
     }

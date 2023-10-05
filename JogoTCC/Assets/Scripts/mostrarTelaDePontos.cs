@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class EscolherCachecol : MonoBehaviour
+public class BotaoMostrarPontos : MonoBehaviour
 {
     public GameManager gameManager;
 
@@ -15,6 +15,6 @@ public class EscolherCachecol : MonoBehaviour
 
     private void OnClick()
     {
-        gameManager.poeCachecol();
+        gameManager.IrTelaDePontos();
     }
 }
