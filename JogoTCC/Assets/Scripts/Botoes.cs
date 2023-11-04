@@ -7,7 +7,7 @@ public class Botoes : MonoBehaviour
 {
     public void IrParaOSeletorDeFases()
     {
-        SceneManager.LoadScene(2);
+        SceneManager.LoadScene(1);
 
     }
 
@@ -21,11 +21,12 @@ public class Botoes : MonoBehaviour
         #endif
     }
 
-    public void IrParaAsOpcoes()
-    {
-        SceneManager.LoadScene(1);
-
-    }
+   // public void IrParaAsOpcoes()
+   // {
+ //       SceneManager.LoadScene(1);
+//
+  //  }
+    //
     
     public void VoltaMenuPrincipal()
     {
@@ -35,7 +36,7 @@ public class Botoes : MonoBehaviour
 
     public void IrParaOsCreditos()
     {
-        SceneManager.LoadScene(6);
+        SceneManager.LoadScene(2);
 
     }
 }

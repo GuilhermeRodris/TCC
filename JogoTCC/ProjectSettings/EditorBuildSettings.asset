@@ -9,11 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/MenuPrincipal.unity
     guid: 207397d3b7b656d4cbee79bb4412f598
   - enabled: 1
-    path: Assets/Scenes/MenuDeOpcoes.unity
-    guid: ea1d58f7598d4f649b1e19c6171e65e6
-  - enabled: 1
     path: Assets/Scenes/SeletorDeFase.unity
     guid: ca1612ee56db4bc4799f438c20be47aa
+  - enabled: 1
+    path: Assets/Scenes/Creditos.unity
+    guid: 2680621618722e6498417debd61688b6
   - enabled: 1
     path: Assets/Scenes/FaseDoParque.unity
     guid: 377ee0b192cb4584ab9e21fdb69d033f
@@ -23,9 +23,6 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/FaseDaFesta.unity
     guid: 3368a6348db920e45b171b40927c08db
-  - enabled: 1
-    path: Assets/Scenes/Creditos.unity
-    guid: 2680621618722e6498417debd61688b6
   m_configObjects:
     com.unity.adaptiveperformance.google.android.provider_settings: {fileID: 11400000, guid: 032ffed45df61a94ea5e0bfe92ed484f, type: 2}
     com.unity.adaptiveperformance.loader_settings: {fileID: 11400000, guid: db5675285a1f0bb42a27d8cd9b6623bd, type: 2}
