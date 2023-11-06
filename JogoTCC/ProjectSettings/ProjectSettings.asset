@@ -13,7 +13,7 @@ PlayerSettings:
   useOnDemandResources: 0
   accelerometerFrequency: 60
   companyName: DefaultCompany
-  productName: JogoTCC
+  productName: Day Planner
   defaultCursor: {fileID: 0}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
@@ -138,7 +138,7 @@ PlayerSettings:
   loadStoreDebugModeEnabled: 0
   bundleVersion: 1.2
   preloadedAssets:
-  - {fileID: 2294215268907243118, guid: db5675285a1f0bb42a27d8cd9b6623bd, type: 2}
+  - {fileID: 6892286742362867545, guid: db5675285a1f0bb42a27d8cd9b6623bd, type: 2}
   - {fileID: 11400000, guid: 4df30323a64dce947840b6a0a6a099f2, type: 2}
   - {fileID: 11400000, guid: 032ffed45df61a94ea5e0bfe92ed484f, type: 2}
   metroInputSource: 0
