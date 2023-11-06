@@ -56,7 +56,7 @@ Library: C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Temp\BurstOutput\Data\Plug
 --linker-options=PdbAltPath="JogoTCC_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
 --decode-folder=C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Library\Burst
 --output=C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
@@ -149,7 +149,7 @@ Library: C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Temp\BurstOutput\Data\Plug
 --linker-options=PdbAltPath="JogoTCC_Data/Plugins/x86_64/lib_burst_generated.pdb"
 --generate-link-xml=Temp\burst.link.xml
 --temp-folder=C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Temp\Burst
---key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.11f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
+--key-folder=C:/Program Files/Unity/Hub/Editor/2022.3.12f1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport
 --decode-folder=C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Library\Burst
 --output=C:\Users\Guilh.000\Documents\TCC\TCC\JogoTCC\Temp\BurstOutput\Data\Plugins\x86_64\lib_burst_generated
 --pdb-search-paths=Temp/ManagedSymbols/
